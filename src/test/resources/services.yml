@@ -1,0 +1,16 @@
+ms-il-jdbc:
+  - cs-workflow-service
+  - il-mappa-cics
+  - payment-service
+  - cs-dashboard-bff
+  - cs-operations-bff
+  - task-score-service
+  - cs-dashboard-fe
+  - cs-operations-fe
+  - il-portfolio
+  - ms-il-docs
+
+ms-il-docs:
+  - payment-service
+  - cs-workflow-service
+  - cs-dashboard-bff

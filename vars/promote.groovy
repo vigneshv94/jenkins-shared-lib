@@ -9,7 +9,10 @@ def call(String appCode) {
                 steps {
                     echo 'Hello World'
                     echo "--------->${appCode}<---------"
-                    def vars = parser.getProviderServices(this, "service.yml", "ms-il-jdbc")
+                    script {
+                        def vars = parser.getProviderServices(this, "service.yml", "ms-il-jdbc")
+
+                    }
                 }
             }
         }

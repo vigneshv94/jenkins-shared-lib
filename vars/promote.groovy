@@ -1,7 +1,6 @@
 import main.java.Parser
 
 def call(String appCode) {
-    Parser parser
     pipeline {
         agent any
 
@@ -10,7 +9,7 @@ def call(String appCode) {
                 steps {
                     echo 'Hello World'
                     echo "--------->${appCode}<---------"
-                    Parser.getProviderServices(this, "service.yml", "ms-il-jdbc")
+                    def vars = parser.getProviderServices(this, "service.yml", "ms-il-jdbc")
                 }
             }
         }

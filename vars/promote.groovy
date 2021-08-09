@@ -1,4 +1,4 @@
-'package main.java.Parser'
+
 
 def call(String appCode) {
     pipeline {
